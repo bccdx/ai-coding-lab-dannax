@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <vector>
 
 class GradeBook {
 public:
@@ -9,7 +10,7 @@ public:
     double getHighest() const;
     int numGrades() const;
 private:
-    double* grades;
+    std::vector<double> grades;
     double highestGrade;
-    std::string* assignments;
+    std::vector<std::string> assignments;
 };
